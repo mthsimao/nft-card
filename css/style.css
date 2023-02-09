@@ -42,14 +42,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 1.5em;
 }
 
 .card-text {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    max-width: 316px;
+    gap: 1.5em;
+    max-width: 315px;
 }
 
 .card-p {
