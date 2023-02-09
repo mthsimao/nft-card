@@ -24,5 +24,5 @@ Mobile preview :
 
 ## Author
 
-- Website - [Matheus Simão](https://www.mthsimao.github.io/portfolio)
-- Frontend Mentor - [@mthsimao](https://www.frontendmentor.io/profile/mthsimao)
+- Website - <a href="(https://www.mthsimao.github.io/portfolio)" target="_blank"> [Matheus Simão]</a>
+- Frontend Mentor - <a href="https://www.frontendmentor.io/profile/mthsimao" target="_blank"> [@mthsimao]</a>
