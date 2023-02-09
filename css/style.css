@@ -11,10 +11,150 @@
     --Very-dark-blue-card: hsl(216, 50%, 16%);
     --Very-dark-blue-line: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
+    --cyan-hover: hsla(178, 100%, 50%, 0.342);;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-dark-blue-main);
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--Very-dark-blue-card);
+    color: var(--White);
+    font-family: var(--font-outfit);
+    padding: 1.5em;
+    border-radius: 10px;
+    max-width: 350px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 316px;
+}
+
+.card-p {
+    font-size: 18px;
+    color: var(--Soft-blue);
+}
+
+.card-information p{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-author {
+    color: var(--Soft-blue);
+    border-top: 1px solid #8080805d;
+    padding-top: 1em;
+}
+
+.card-author span {
+    color: var(--White);
+    padding-left: 2px
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.eth {
+    color: var(--Cyan);
+}
+
+.clock {
+    color: var(--Soft-blue);
+}
+
+.pq-img {
+    width: 32px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.box-img{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .7s ease-in-out;
+    background-color: var(--cyan-hover);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.box-img:hover .hover {
+    opacity: 1;
+}
+
+.img2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* media*/
+
+@media (max-width:400px) {
+    .card {
+        max-width: 300px;
+    }
+}
+
+@media (max-width:325px) {
+    .card {
+        max-width: 260px;
+        padding: 1.2em;
+    }
+
+    .card-p {
+        font-size: 16px;
+    }
 }
